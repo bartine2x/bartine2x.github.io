@@ -12,7 +12,7 @@ const CONFIG = {
   base: '/',
   projects: {
     github: {
-      display: true, // Display GitHub projects?
+      display: false, // Display GitHub projects?
       header: 'Github Projects',
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
@@ -23,10 +23,10 @@ const CONFIG = {
           projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
-      manual: {
-        // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
-      },
+      // manual: {
+      //   // Properties for manually specifying projects
+      //   projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+      // },
     },
     external: {
       header: 'Projects i worked with',
@@ -97,7 +97,7 @@ const CONFIG = {
     // skype: '',
     // telegram: '',
     // website: 'https://www.arifszn.com',
-    // phone: '',
+    phone: '09214492033',
     email: 'ag.ranola01@gmail.com',
   },
   resume: {
