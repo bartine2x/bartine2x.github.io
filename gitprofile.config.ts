@@ -34,14 +34,14 @@ const CONFIG = {
       projects: [
         {
           title: 'Centrum Fuel Page',
-          description: 'The main webpage of centrum fuel.',
+          description: 'A Website built from HTML, CSS, JAVACRIPT and PHP. The layout comes from the PSD file and replicated the layouts to built this website.',
           imageUrl:
             'https://drive.google.com/thumbnail?id=1pahV-ixxRs68kqbS0Wih3q0XmxXlLk9I',
           link: 'https://centrumfuel.ph/web',
         },
         {
           title: 'RKCGPS',
-          description: 'System that tracks vehicle positions realtime.',
+          description: 'Worked as a team. We built the website using ReactJS and we used an open-source project and their APIs for tracking a company owned vehicles.',
           imageUrl:
             'https://drive.google.com/thumbnail?id=1UcH5o-jr7RhNephpckuwe-UW7F7TGwVI',
           link: 'https://rkcgps.net',
@@ -49,27 +49,35 @@ const CONFIG = {
         {
           title: 'ATGMS',
           description:
-            'A application that monitors underground fuel tanks partnered with UGTMS that records its data.',
+            'This system has two components it has Website and Application. The website is built from HTML, CSS, JAVASCRIPT and PHP. And the application is built from C#. The application posts the data on the php file so we can store the details of underground tank and the Website can be used as viewing and adding accounts for application',
           imageUrl:
             'https://drive.google.com/thumbnail?id=1MbH5jHw7w7PDohAIN1KQ7j6G6OAk8dMV',
-          link: 'https://infosys.centrumfuel.ph/ugtms/',
+          link: '#',
         },
         {
           title: 'RKC CFSDV',
           description:
-            'Accounting system that tracks cash disbursment of all gasoline stations.',
+            'This is a web-based project built from HTML, CSS, JAVASCRIPT and PHP. This system monitors the cashflow(IN-OUT) of a stations.',
           imageUrl:
             'https://drive.google.com/thumbnail?id=1pahV-ixxRs68kqbS0Wih3q0XmxXlLk9I',
-          link: 'https://infosys.centrumfuel.ph/cfsdv/',
+          link: '#',
         },
         {
           title: 'RKCHUB',
           description:
-            'A system that hold user accounts that they can use if they use the OAuth.',
+            'This is a web-based project that hold user accounts and that they can use if they use the OAuth.',
           imageUrl:
             'https://drive.google.com/thumbnail?id=1jdXSmi1G2oF_b4wf1TLxCCbTL3by0AgB',
-          link: 'https://infosys.centrumfuel.ph/rkchub/oauth/',
+          link: '#',
         },
+        {
+          title: 'RKCWMS',
+          description:
+            'This is a web-based project that monitors a warehouse stocks and its features has issuance, ipo, inventory, returns, order tracking, reports and user management.',
+          imageUrl:
+            'https://drive.google.com/thumbnail?id=1pahV-ixxRs68kqbS0Wih3q0XmxXlLk9I',
+          link: 'https://wms1.raelkitzcorp.com/',
+        }
       ],
     },
   },
@@ -108,6 +116,11 @@ const CONFIG = {
     'PHP',
     'Laravel',
     'JavaScript',
+    'TypeScript',
+    'GIT',
+    'Websocket',
+    'JSON',
+    'RESTful API',
     'React.js',
     'Node.js',
     'C#',
