@@ -2,54 +2,46 @@
 
 const CONFIG = {
   github: {
-    username: 'bartine2x', // Your GitHub org/user name. (This is the only required config)
+    username: 'bartine2x',
   },
-  /**
-   * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
-   * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
-   * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
-   */
   base: '/',
   projects: {
     github: {
-      display: false, // Display GitHub projects?
-      header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      display: false,
+      header: 'GitHub Projects',
+      mode: 'automatic',
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
+        sortBy: 'stars',
+        limit: 8,
         exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          forks: false,
+          projects: [],
         },
       },
-      // manual: {
-      //   // Properties for manually specifying projects
-      //   projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
-      // },
     },
     external: {
-      header: 'Projects i worked with',
-      // To hide the `External Projects` section, keep it empty.
+      header: 'Projects Worked On',
       projects: [
         {
           title: 'Centrum Fuel Page',
-          description: 'A Website built from HTML, CSS, JAVACRIPT and PHP. The layout comes from the PSD file and replicated the layouts to built this website.',
+          description:
+            'HTML, CSS, JavaScript, PHP, and MySQL website converted from PSD design. Built a responsive marketing page, added an admin login for content management, reduced manual update work, and integrated Instagram OAuth to display live Instagram feed content.',
           imageUrl:
             'https://drive.google.com/thumbnail?id=1pahV-ixxRs68kqbS0Wih3q0XmxXlLk9I',
-          link: 'https://centrumfuel.ph/web',
+          link: 'https://centrumfuel.ph',
         },
         {
-          title: 'RKCGPS',
-          description: 'Worked as a team. We built the website using ReactJS and we used an open-source project and their APIs for tracking a company owned vehicles.',
+          title: 'RKC GPS',
+          description:
+            'React and Laravel real-time vehicle tracking platform for company-owned fleets. Created the tracking webpage, deployed an open-source GPS tracking platform on Linux, and implemented Google Maps API custom markers and vehicle clustering.',
           imageUrl:
             'https://drive.google.com/thumbnail?id=1UcH5o-jr7RhNephpckuwe-UW7F7TGwVI',
-          link: 'https://rkcgps.net',
+          link: 'https://internal.rkcgps.net/',
         },
         {
-          title: 'ATGMS',
+          title: 'RKC ATGMS',
           description:
-            'This system has two components it has Website and Application. The website is built from HTML, CSS, JAVASCRIPT and PHP. And the application is built from C#. The application posts the data on the php file so we can store the details of underground tank and the Website can be used as viewing and adding accounts for application',
+            'Automated tank gauge monitoring system with a PHP/MySQL web dashboard and C# application integration. Used IEEE-defined commands to read tank data from the console through RS-232 serial communication, store underground tank readings, and provide web-based monitoring with user account management.',
           imageUrl:
             'https://drive.google.com/thumbnail?id=1MbH5jHw7w7PDohAIN1KQ7j6G6OAk8dMV',
           link: '#',
@@ -57,83 +49,123 @@ const CONFIG = {
         {
           title: 'RKC CFSDV',
           description:
-            'This is a web-based project built from HTML, CSS, JAVASCRIPT and PHP. This system monitors the cashflow(IN-OUT) of a stations.',
+            'HTML, CSS, JavaScript, PHP, and MySQL cash outflow validation system. Built tracking for full-station cash outflow, prevented unaccounted expenses, and helped the finance team reach 100% liquidation tracking accuracy.',
+          imageUrl:
+            'https://drive.google.com/thumbnail?id=1pahV-ixxRs68kqbS0Wih3q0XmxXlLk9I',
+          link: 'https://dv.raelkitzcorp.com/',
+        },
+        {
+          title: 'RKC HRIS',
+          description:
+            'React, TypeScript, Laravel, MySQL, WebSockets, and Python HRIS managing 200+ employee records. Includes access control, disciplinary records, generated termination documents, memorandum management, a WYSIWYG company policy CMS for document-accurate preview and direct editing, and payroll with attendance management and automated computations. Integrated a Python biometrics service with fingerprint-reader support and face recognition for attendance capture.',
+          imageUrl:
+            'https://drive.google.com/thumbnail?id=1pahV-ixxRs68kqbS0Wih3q0XmxXlLk9I',
+          link: 'https://hris.raelkitzcorp.com/',
+        },
+        {
+          title: 'RKC Warehouse Management System',
+          description:
+            'React, Laravel, TypeScript, MySQL, and WebSockets inventory system for 1,000+ monthly item in/out transactions. Added real-time inventory syncing, rack/warehouse/bin location tracking, adjustment features, internal purchase functionality, and cross-user WebSocket updates.',
+          imageUrl:
+            'https://drive.google.com/thumbnail?id=1pahV-ixxRs68kqbS0Wih3q0XmxXlLk9I',
+          link: 'https://wms.raelkitzcorp.com/',
+        },
+        {
+          title: 'RKC Ordering System (In Development)',
+          description:
+            'Deployed work-in-progress ordering system built with Next.js, shadcn/ui, and Laravel, with the frontend hosted on Vercel and the backend on Render. Designed to integrate with RKC Warehouse Management System so products can be ordered, received, and transferred into a selected warehouse.',
+          imageUrl:
+            'https://drive.google.com/thumbnail?id=1pahV-ixxRs68kqbS0Wih3q0XmxXlLk9I',
+          link: 'https://my-ordering-system-seven.vercel.app/',
+        },
+        {
+          title: 'RKC Work Request System',
+          description:
+            'React, Laravel, TypeScript, MySQL, and WebSockets work request platform. Created the employee task submission flow, added attachment support for visitation requirements, and supported real-time request coordination across users.',
           imageUrl:
             'https://drive.google.com/thumbnail?id=1pahV-ixxRs68kqbS0Wih3q0XmxXlLk9I',
           link: '#',
         },
         {
-          title: 'RKCHUB',
+          title: 'Playwright Web Scraper',
           description:
-            'This is a web-based project that hold user accounts and that they can use if they use the OAuth.',
-          imageUrl:
-            'https://drive.google.com/thumbnail?id=1jdXSmi1G2oF_b4wf1TLxCCbTL3by0AgB',
+            'Reusable Node.js web scraper built with Playwright and executed through a command-line workflow such as npm run scrape -- "<URL>". Tested against a paginated sample website and designed for future collection of product data from permitted online sources.',
+          // imageUrl:
+          //   'https://drive.google.com/thumbnail?id=1pahV-ixxRs68kqbS0Wih3q0XmxXlLk9I',
           link: '#',
         },
         {
-          title: 'RKCWMS',
+          title: 'Mock Hotel',
           description:
-            'This is a web-based project that monitors a warehouse stocks and its features has issuance, ipo, inventory, returns, order tracking, reports and user management.',
-          imageUrl:
-            'https://drive.google.com/thumbnail?id=1pahV-ixxRs68kqbS0Wih3q0XmxXlLk9I',
-          link: 'https://wms1.raelkitzcorp.com/',
-        }
+            'Collaborative hotel management PWA developed with students using a React and TypeScript frontend and a Laravel backend. Supports room and food management, room bookings, food orders, receipt printing, and live customer support powered by WebSockets. Deployed with the frontend on Vercel and the backend on Railway.',
+          // imageUrl:
+          //   'https://drive.google.com/thumbnail?id=1pahV-ixxRs68kqbS0Wih3q0XmxXlLk9I',
+          link: 'https://qr-scanner-sage-seven.vercel.app/SignIn',
+        },
+        {
+          title: 'Princeza',
+          description:
+            'Deployed work-in-progress dress shop built with a Next.js and shadcn/ui frontend and a Laravel backend. Its AI-powered customizer generates realistic previews from selected shape and cut, sleeves, fabric, color, and button placement. Designs and generated results are saved in the database and reused for matching requests to avoid duplicate AI calls and reduce token usage. The frontend is deployed on Vercel and the backend on Render.',
+          // imageUrl:
+          //   'https://drive.google.com/thumbnail?id=1pahV-ixxRs68kqbS0Wih3q0XmxXlLk9I',
+          link: 'https://princeza.vercel.app/',
+        },
       ],
     },
   },
   seo: {
-    title: 'Portfolio of Alijah Rañola',
-    description: '',
+    title: 'Portfolio of Alijah Gabriel Rañola',
+    description:
+      'Full-stack developer with 3+ years of experience building enterprise web applications using React, TypeScript, Laravel, and MySQL, with work across inventory management, HRIS, purchasing, vehicle tracking, and WebSocket-powered systems.',
     imageURL: '',
   },
   social: {
-    linkedin: 'Alijah Gabriel Rañola',
-    // twitter: 'arif_szn',
-    // mastodon: 'arifszn@mastodon.social',
-    // researchGate: '',
-    // facebook: '',
-    // instagram: '',
-    // reddit: '',
-    // threads: '',
-    // youtube: '',
-    // udemy: '',
-    // dribbble: '',
-    // behance: '',
-    // medium: 'arifszn',
-    // dev: 'arifszn',
-    // stackoverflow: '',
-    // skype: '',
-    // telegram: '',
-    // website: 'https://www.arifszn.com',
-    phone: '09214492033',
+    phone: '+639214492033',
     email: 'ag.ranola01@gmail.com',
   },
   resume: {
     fileUrl:
-      'https://drive.google.com/file/d/1qQ5wPb26VEMXZFgNwknVpFWMUk51yx2I/view?usp=sharing', // Empty fileUrl will hide the `Download Resume` button.
+      'https://drive.google.com/file/d/1qQ5wPb26VEMXZFgNwknVpFWMUk51yx2I/view?usp=sharing',
   },
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
+    'React',
     'TypeScript',
-    'GIT',
-    'Websocket',
-    'JSON',
-    'RESTful API',
-    'React.js',
-    'Node.js',
-    'C#',
-    // 'Nest.js',
-    'MySQL',
-    // 'PostgreSQL',
-    // 'Git',
-    // 'Docker',
-    // 'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
+    'JavaScript',
+    'HTML5',
+    'CSS3',
+    'Tailwind CSS',
     'Material UI',
+    'Ant Design',
+    'shadcn/ui',
+    'Laravel',
+    'PHP',
+    'REST APIs',
+    'WebSockets',
+    'MySQL',
+    'PostgreSQL',
+    'MongoDB',
+    'Database Design',
+    'Query Optimization',
+    'Git',
+    'GitHub',
+    'Docker',
+    'Docker Compose',
+    'Postman',
+    'Google Maps API',
+    'Google OAuth',
+    'Instagram API',
+    'Next.js',
+    'Node.js',
+    'Playwright',
+    'Web Scraping',
+    'Progressive Web Apps (PWA)',
+    'Vercel',
+    'Railway',
+    'Render',
+    'Generative AI Integration',
+    'Database Caching',
+    'C#',
+    'Python',
   ],
   experiences: [
     {
@@ -144,14 +176,6 @@ const CONFIG = {
       companyLink: 'https://www.centrumfuel.ph/web/index',
     },
   ],
-  // certifications: [
-  //   {
-  //     name: 'Lorem ipsum',
-  //     body: 'Lorem ipsum dolor sit amet',
-  //     year: 'March 2022',
-  //     link: 'https://example.com',
-  //   },
-  // ],
   educations: [
     {
       institution: 'University of Pangasinan',
@@ -166,55 +190,20 @@ const CONFIG = {
       to: '2018',
     },
   ],
-  publications: [
-    // {
-    //   title: 'Publication Title',
-    //   conferenceName: '',
-    //   journalName: 'Journal Name',
-    //   authors: 'John Doe, Jane Smith',
-    //   link: 'https://example.com',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    // },
-    // {
-    //   title: 'Publication Title',
-    //   conferenceName: 'Conference Name',
-    //   journalName: '',
-    //   authors: 'John Doe, Jane Smith',
-    //   link: 'https://example.com',
-    //   description:
-    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    // },
-  ],
-  // Display articles from your medium or dev account. (Optional)
-  blog: {
-    // source: 'dev', // medium | dev
-    // username: 'arifszn', // to hide blog section, keep it empty
-    // limit: 2, // How many articles to display. Max is 10.
-  },
+  publications: [],
+  blog: {},
   googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+    id: '',
   },
-  // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: {
     id: '',
     snippetVersion: 6,
   },
   themeConfig: {
     defaultTheme: 'lofi',
-
-    // Hides the switch in the navbar
-    // Useful if you want to support a single color mode
     disableSwitch: false,
-
-    // Should use the prefers-color-scheme media-query,
-    // using user system preferences, instead of the hardcoded defaultTheme
     respectPrefersColorScheme: false,
-
-    // Display the ring in Profile picture
     displayAvatarRing: true,
-
-    // Available themes. To remove any theme, exclude from here.
     themes: [
       'light',
       'dark',
@@ -250,8 +239,6 @@ const CONFIG = {
       'sunset',
       'procyon',
     ],
-
-    // Custom theme, applied to `procyon` theme
     customTheme: {
       primary: '#fc055b',
       secondary: '#219aaf',
@@ -262,14 +249,6 @@ const CONFIG = {
       '--rounded-btn': '3rem',
     },
   },
-
-  // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
-
   enablePWA: true,
 };
 
