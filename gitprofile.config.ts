@@ -163,7 +163,7 @@ const CONFIG = {
     'Railway',
     'Render',
     'Generative AI Integration',
-    'Database Caching',
+    // 'Database Caching',
     'C#',
     'Python',
   ],
